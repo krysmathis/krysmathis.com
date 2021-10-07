@@ -1,0 +1,80 @@
+.loginAdmin {
+    background-color: lightgray;
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    flex-basis: rows;
+    justify-content: center;
+    align-items: center;
+}
+.login__password-label,
+.login__email-label {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.login__email {
+    font-size: 1em;
+    padding: 5px;
+    width: 100%;
+}
+
+.login__password {
+    width: 100%;
+    font-size: 1em;
+    padding: 5px;
+}
+
+.login__container {
+    background-color: white;
+    border: px solid white;
+    height: 400px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.25em;
+    padding: 50px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,.5);
+    border-radius: 10px;
+}
+
+.login__button-container {
+    display: flex;
+    width: 90%;
+    justify-content: space-around;
+}
+
+.login__button-login,
+.login__button-create {
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: .75em;
+    border: 1px solid gray;
+
+}
+
+.login__button-login:focus {outline:0;}
+.login__button-create:focus {outline:0;}
+
+.login__button-login:hover {background-color:lightgreen;}
+.login__button-create:hover {background-color:lightgreen;}
+
+
+.login__form {
+    padding: 5px;
+    display: inline-block;
+    width: 100%;
+}
+
+.login__username-container {
+    display: block;
+} 
+
+.login__user-message {
+    display: none;
+    background-color: red;
+    padding: 10px;
+}

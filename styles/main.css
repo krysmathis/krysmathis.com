@@ -1,0 +1,154 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 18px;
+	font-family: ui-sans-serif, sans-serif;
+	margin: 1.5rem auto;
+	width: 90vw;
+	max-width: 80em;
+	line-height: 1.5;
+}
+
+code {
+	font-family: ui-monospace, monospace, monospace;
+}
+
+kbd, samp, pre {
+	font-family: ui-monospace, monospace, monospace;
+	margin: 3rem auto;
+	width: 80%;
+	padding: 0rem 1rem 1rem 1rem;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #e2e8f0; /* taken from Tailwind CSS: https://tailwindcss.com */
+	border-radius: .5rem;
+	box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* taken from Tailwind CSS: https://tailwindcss.com */
+	overflow-x: auto;
+}
+
+table {
+	border-collapse: collapse;
+	margin: 1.5rem auto;
+	width: 80%;
+	text-align: left;
+	display: table;
+	padding: 1rem;
+}
+
+tbody > :nth-child(odd) {
+	background-color: #e2e5e9;
+}
+
+* + *
+{
+	margin-top: 1.5rem;
+}
+
+article + article {
+	margin-top: 5rem;
+}
+
+b, strong {
+	font-weight: bold;
+}
+
+dd {
+	margin-left: 5rem;
+}
+
+img {
+	max-width: 100%;
+}
+
+figure {
+	text-align: center;
+	display: table;
+	margin: 3rem auto;
+	width: 80%;
+	padding: 1rem;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #e2e8f0; /* taken from Tailwind CSS: https://tailwindcss.com */
+	border-radius: .5rem;
+	box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* taken from Tailwind CSS: https://tailwindcss.com */
+}
+
+figcaption {
+	font-weight: bold;
+}
+
+figcaption > p {
+	text-align: left;
+	font-weight: normal;
+}
+
+blockquote {
+	padding: 0 1rem;
+	margin: 3rem auto;
+	width: 80%;
+	border-left: 8px solid darkslategray;
+}
+
+blockquote > p {
+	margin-top: 0;
+}
+
+.byline {
+	font-weight: bold;
+}
+
+header {
+	text-align: center;
+	margin-bottom: 3rem;
+}
+
+footer {
+	text-align: center;
+}
+
+footer.meta {
+	margin-top: 3rem;
+}
+
+footer.meta > details {
+	margin-bottom: 1.5rem;
+}
+
+aside {
+	/*border: 2px dashed gray;*/
+	padding: 1rem;
+	margin: 3rem auto;
+	width: 80%;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #e2e8f0; /* taken from Tailwind CSS: https://tailwindcss.com */
+	border-radius: .5rem;
+	box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* taken from Tailwind CSS: https://tailwindcss.com */
+}
+
+aside::before {
+	content: "Aside: ";
+	font-weight: bold;
+}
+
+
+
+ul {
+	list-style-type: none;
+}
+
+li.favitem:before {
+	content: "â˜…";
+	margin-left: -2rem;
+	width: 2rem;
+	display: inline-block;
+	text-align: center;
+}
+
+@media print {
+	a:after {
+		content: " [â†—"attr(href)"]";
+	}
+}
