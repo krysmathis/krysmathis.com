@@ -18,7 +18,7 @@ let gameFrame = 0;
 let enemySpeedStart = 0;
 let bubbleModAmount = 50;
 let gameOver = false;
-ctx.font = '50px Georgia';
+ctx.font = '40px Arial';
 
 // mouse interactivity
 let canvasPosition = canvas.getBoundingClientRect();
