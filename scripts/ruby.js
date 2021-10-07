@@ -369,7 +369,7 @@ function preventBehavior(e) {
     e.preventDefault();
 }
 
-document.addEventListener("touchmove", preventBehavior, {passive: false});
+document.addEventListener("touchMove", preventBehavior, {passive: false});
 
 window.addEventListener('resize', function(){
     canvasPosition = canvas.getBoundingClientRect();
